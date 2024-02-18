@@ -32,21 +32,21 @@ li {
 }
 
 .header__container {
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding-top: 20px;
-padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header__logo {
     color: rgb(255, 255, 255);
-font-family: Poppins;
-font-size: 24px;
-font-weight: 400;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: left;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
 }
 .header__logo span {
     font-weight: 700;
@@ -64,13 +64,13 @@ text-align: left;
 
 .header__a {
     color: rgb(255, 255, 255);
-font-family: Poppins;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: left;
-position: relative;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    position: relative;
 }
 .header__a:hover::before, .header__a.is-active::before {
     transform: scale(1);
@@ -86,25 +86,22 @@ position: relative;
     transform: scale(0);
     transition: 0.2 all ease-in-out;
     background: #5C62EC;
-
 }
-
 .welcome__title {
     font-family: DM Sans;
-font-size: 60px;
-font-weight: 700;
-line-height: 140%;
-letter-spacing: -0.5px;
-text-align: center;
-color: #FAFAFA;
-display: inline-flex;
-gap: 3px;
-align-items: baseline;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #FAFAFA;
+    display: inline-flex;
+    gap: 3px;
+    align-items: baseline;
 }
 .welcome__title h1 {
     color: #5C62EC;
 }
-
 .welcome__desc {
     font-family: DM Sans;
     font-size: 40px;
@@ -113,7 +110,6 @@ align-items: baseline;
     letter-spacing: inherit;
     text-align: center;
     color: #FAFAFA;
-    
 }
 .welcome__desc2{
     color: rgb(255, 255, 255);
@@ -124,14 +120,11 @@ align-items: baseline;
     letter-spacing: -0.5px;
     text-align: center;
     margin-top: 21px;
-    
 }
 .welcome__content {
     padding-top: 182px;
     padding-bottom: 242px;
-    
 }
-
 .btn {
     background: #5C62EC;
     border-radius: 5px;
@@ -143,8 +136,6 @@ align-items: baseline;
     letter-spacing: 0.15px;
     text-align: center;
     padding: 12px 28px;
-    
-
 }
 .welcome__btn__div{
     margin-top: 50px;
@@ -161,7 +152,6 @@ align-items: baseline;
     margin-inline: auto;
     margin-top: 70px;
     margin-bottom: 70px;
-
 }
 
 .projects__items {
@@ -169,16 +159,15 @@ align-items: baseline;
     max-height: 349px;
     margin: auto;
     color: rgb(23, 23, 24);
-font-family: DM Sans;
-font-size: 24px;
-font-weight: 700;
-line-height: 130%;
-letter-spacing: -0.5px;
-text-align: left;
-border-radius: 10px;
-
-box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
-background: rgb(255, 255, 255);
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.5px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(255, 255, 255);
 
 }
 .proj__header {
@@ -199,14 +188,12 @@ background: rgb(255, 255, 255);
     object-fit: cover;
 }
 .projects__items p{
-    
     padding-left: 20px;
     padding-bottom: 25px;
     padding-top: 5px;
 }
 .footer {
     background: rgb(23, 23, 24);
-    
 }
 .footer__icons {
     display: flex;
@@ -216,8 +203,7 @@ background: rgb(255, 255, 255);
     margin: auto;
     column-gap: 30px;
     padding-top: 64px;
-padding-bottom: 31px;
-
+    padding-bottom: 31px;
 }
 .ps {
     color: rgb(255, 255, 255);
@@ -228,5 +214,41 @@ padding-bottom: 31px;
     letter-spacing: -0.5px;
     text-align: center;
     padding-bottom: 50px;
-    
+}
+
+@media screen and (max-width: 1220px) {
+    .projects {
+        padding: 20px;
+        max-height: 100%;
+        grid-template-rows: 110px 1fr 1fr;
+    }
+    .projects__items p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .projects {
+    display: block;
+    max-height: 100%;
+    }
+    .projects__items {
+        margin-top: 20px;
+    }
+    .header__container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header__logo {
+      font-size: 20px;
+    font-weight: 200;
+    }
+    .welcome__title {
+        font-family: DM Sans;
+    font-size: 30px;
+    font-weight: 400;
+    }
+    .welcome__desc {
+        font-size: 30px;
+        font-weight: 500;
+    }
 }
