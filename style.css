@@ -228,8 +228,15 @@ li {
 }
 @media screen and (max-width: 700px) {
     .projects {
-    display: block;
-    max-height: 100%;
+        max-height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr;
+    }
+    .proj__header {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
     .projects__items {
         margin-top: 20px;
@@ -239,13 +246,13 @@ li {
         gap: 10px;
     }
     .header__logo {
-      font-size: 20px;
-    font-weight: 200;
+        font-size: 20px;
+        font-weight: 200;
     }
     .welcome__title {
         font-family: DM Sans;
-    font-size: 30px;
-    font-weight: 400;
+        font-size: 30px;
+        font-weight: 400;
     }
     .welcome__desc {
         font-size: 30px;
